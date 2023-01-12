@@ -1,0 +1,44 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/trade_app
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: slkumthekar97@gmail.com
+    password: wsheikisbjlgnbob
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+   application:
+    name: USER_API
+
+spring.boot.admin.client.url=http://localhost:1111/
+user-api:
+  messages:
+    empSaveSucc: User Saved Successfully
+    empSaveFail: User Save Failed
+    empUpdateSucc: User Updated Successfully
+    empUpdateFail: User Update Failed
+    empDeleteSucc: User Deleted Successfully
+    empDeleteFail: User Delete Failed
+    empPasswordSucc: User Password Saved Successfully
+    empPasswordFail: User Password Save Failed
+    empLoginSucc: User Logged in Successfully
+    empLoginFail: User Login Failed
+    
+
